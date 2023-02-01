@@ -1,0 +1,303 @@
+
+
+.legend img{
+    width: 500px;
+    height: 400px;
+}
+
+p{
+    font-size: 18px;
+}
+
+
+h1, h2, h3{
+    text-align: center;
+    margin: auto;
+  
+}
+
+img{
+   border-radius: 8px;
+    height: 550px;
+}
+
+.Diluc-img{
+	height: 550px;
+	width: 500;
+}
+
+body{
+    margin: 0px;
+    position: relative;
+    background: #f2f2f2;
+    height: 100%;
+    font: 15px/1.5 'PT Sans', 'Tahoma', 'Arial', sans-serif;
+    z-index: 0;
+    background-image: url(img/bg_xs.webp);
+    background-attachment: fixed;
+ 
+
+}
+
+*, *:before, *::after {
+    box-sizing: border-box;
+}
+/*
+* Шапка
+*/
+.header{
+    width: 100%;
+	display: flex;
+    justify-content: start;
+    position: relative;
+    margin: 0 auto;
+    padding: 0.8rem;
+    background:rgba(255,255,255,0.8);
+    height: 50px;
+    align-items: center;
+}
+
+.title{
+	display: flex;
+    font: 20pt tahoma;
+    margin-left: 50px;
+    margin-top: 18px;
+    color: green;
+    height: 60px;
+
+}
+
+.title a{
+    text-decoration: none; 
+    color: green;
+}
+
+.menu {
+    font: 16pt arial;
+    margin-right: 50px;
+    display: flex;
+}
+
+
+.menu a {
+    display: inline-block;
+    color: green;
+    height: 70px;
+    padding: 20px 25px 0px;
+}
+
+.menu .menu:hover a {
+    background: #474B4F;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+li {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    ;
+}
+
+/*
+Главный текст
+*/
+.w-page{
+    position: relative;
+    padding-top: 50px;
+    z-index: 0;
+}
+.main-box {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 8px rgb(0 0 0 / 5%);
+    margin-bottom: 30px;
+    background-image: url(img/bg_xs.webp);
+    background-attachment: fixed;
+    background:rgba(255,255,255,.80);
+
+}
+
+.container{
+    width: 1200px;
+    margin: 0 auto;
+}
+.content-m{
+    width: 100%;
+    padding: 35px 40px 50px;
+
+
+}
+
+.up-menu{
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.grid, .grid-search, .row-m{
+    
+    display: flex;
+    position: relative;
+    width: 100%;
+    align-content: flex-start;
+    border: 3px solid transparent;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.content-item-b {
+    display: block;
+    position: relative;
+    width: 49%;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 5px rgb(0 0 0 / 20%);
+    overflow: hidden;
+
+}
+
+.content-item, .content-item {
+    display: block;
+    position: relative;
+    width: 49%;
+    border-radius: 50px;
+    margin-bottom: 20px;
+    box-shadow: 0px 1px 5px rgb(0 0 0 / 20%);
+    overflow: hidden;
+}
+
+.bigsmall.item-img-box{
+    padding-bottom: 62.9%;
+}
+
+.item-img-box{
+    position: relative;
+    width: 100%;
+    padding-bottom: 140%;
+    height: 0;
+    overflow: hidden;
+}
+
+.item-img{
+    
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-color: #ddd;
+    background-size: cover;
+}
+
+.itm-shdw{
+    position: absolute;
+    top: 30px;
+    right: 30px;
+    bottom: 30px;
+    left: 30px;
+    background: rgba(0,0,0,0);
+    transition: .3s ease-out;
+}
+
+.item-b-title, .item-title{
+    font-size: 1.1em;
+}
+
+.item-b-title{
+    font-size: 1.5em;
+    padding: 15px 20px;
+}
+
+.item-title, .item-b-title, .item-title-game, .title-img .labels {
+    background: rgba(0,0,0,.3);
+}
+
+.item-title, .item-b-title, .item-title-game {
+    position: absolute;
+    width: 100%;
+    left: 0;
+    bottom: 0;
+    text-shadow: 1px 1px 1px rgb(0 0 0 / 50%);
+    padding: 15px 20px;
+    font-size: 1.09em;
+    line-height: 1.4;
+    font-weight: bold;
+    color: white;
+    background: rgba(0,0,0,.2);
+    transition: background .2s ease-out;
+}
+
+a.itm-img-link {
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.bigsmall{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    width: 45%;
+}
+
+
+.big-small {
+    width: 100%;
+}
+
+iframe {
+	 overflow: hidden;
+	 border-radius: 15px;
+}
+
+
+
+.preloader {
+  position: fixed; /*фиксированное положение*/
+  /*координаты положения*/
+  left: 0;
+  top: 0; 
+  right: 0; 
+  bottom: 0;
+  overflow: hidden; /*скрытие содержимого, выходящее за пределы*/
+  background: #fff; /*фон элемента*/
+  z-index: 1001; /*определяет положение позиционированного элемента*/
+  opacity: 0.95; /*прозрачность*/
+}
+
+.preloader__image {
+  position: relative;
+  /*Позиция*/
+  top: 50%; 
+  left: 50%;
+  /*Формат изображения*/
+  width: 64px; /**/
+  height: 80px; /**/
+  margin-top: -32px; /**/
+  margin-left: -32px; /**/
+  background: url('img/preloader.gif') no-repeat 50% 50%; /*расположение (url) изображения gif, сколько раз повторять и размер*/
+}
+
+.loaded_hiding .preloader {
+  transition: 0.3s opacity;
+  opacity: 0;
+}
+
+.loaded .preloader {
+  display: none;
+}
+
