@@ -26,6 +26,17 @@ header .logo {
   color: white;
 }
 
+.content a {
+  text-decoration: none;
+  color: black;
+  transition: text-shadow 0.3s ease;
+}
+
+.content a:hover {
+  color: #006400; /* темно-серый цвет при наведении */
+  text-shadow: 2px 2px 5px rgba(0, 0, 0, 0.3);
+}
+
 header nav ul {
   list-style: none;
   margin: 0;
@@ -54,7 +65,12 @@ header nav ul li a {
 }
 
 p {
-  font-size: 30px;
+  font-size: 25px;
+  padding: 10px;
+}
+
+h2 {
+  text-align: center; 
 }
 
 .content, .intro {
@@ -85,4 +101,8 @@ main {
 
 h1{
   font-size: 40px;
+}
+
+.pushkin-photo-saltan {
+  width: 350px;
 }
