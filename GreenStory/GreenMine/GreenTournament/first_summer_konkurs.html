@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style_for_summer.css">
+    <script src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <title>GreenTournament</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+
+
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+
+    <div class="wrap">
+        <div class="header">
+            <span class="title"><a href="index.html">GreenTournament</a></span>
+            <ul class="menu">
+                <li class="menu-item dropdown">
+                    <a href="#" class="dropdown-toggle">Конкурсы</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="first_konkurs.html">Первый конкурс 2022</a></li>
+                        <li><a href="first_newyear_konkurs.html">Новогодний конкурс 2022</a></li>
+                        <li><a href="first_summer_konkurs.html">Летний конкурс 2024</a></li>
+                        <li><a href="second_newyear_konkurs.html">Новогодний конкурс 2024</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="w-page"> 
+        <div id="updown-area">
+            <div id="updown"></div>
+            <div class="container main-box">
+                <div class="content-m"> 
+                    <div><h1>Первый летний конкурс</h1></div>
+                    <img src="img/first_summer_konkurs_2.jpeg">
+                    <p>Первый летний конкурс был проведен спустя аж 2 года, после первого зимнего, 21 июля 2024 года. Делал его почти год с января 2024.Было создано 9 мини-игр, конкурс продлился 5 с половиной часов. Также была проведена большая работа над ошибками и в этот раз багов было гораздо меньше 
+                    (но зато был один крупный из-за которого несколько человек не смогли зайти на сервер и не считая того, что на первой же игре я забыл активировать поршни и был корявый спавнпойнт, и еще забыл убрать рычаг с командного блока, который отвечал за убийство на барьерах).</p>
+                    <p>Но было жалко, что учавствовало всего 4 человека и то, один руинер. Приняли участие химик, максимка, саня и банкомат (в последствии ливнул). Тем не менее получилось очень даже хорошо, не смотря на все баги и приколы. Знатно поржали, и с кайфиком провели время (по-крайней мере GreenTea точно).</p>
+                    <p>Карта конкурса сохранилась частично, итоговый вариант, впослдествии, был изменен под второй новгодний конкурс.</p>
+                    <p>Список мини-игр на конкурсе:</p>
+                    <ul class="text"><i>
+                        <li>Траcса на выживание (паркурчик легкого уровня)</li>
+                        <li>Отыщи дырку</li>
+                        <li>Пол-лава</li>
+                        <li>гонка на лодках</li>
+                        <li>Паркур</li>
+                        <li>Снайперы</li>
+                        <li>Столбы</li>
+                        <li>Растения против зомби</li>
+                        <li>Тюрьма</li></i>
+                    </ul>
+                    <h1>Победители</h1>
+                    <p>В мини-играх победили:</p>
+                    <ul class="text"><i>
+                        <li>Химик в этот раз победил в большинстве игр, а именно в 1, во 2 и 3 забрал треть выйгрыша, в 5 и 6, в 7 и 9 забрал треть</li>
+                        <li>Саня забрал во 2, 3, 7 и 9 треть выйгрыша, победил в 4 и в 8 забрал половину</li>
+                        <li>Максимка (mrazota) в 7 и 9 забрал треть, а в 8 половину</li>
+                        <li>Банка забрал во 2 и 3 треть приза</li></i>
+                        <li>Плюс дал бонусные крутки колеса, по которым Химик получил 150, Саня 125, Максимка 150 и 500, которые мог бы получить Банкомат, но, т.к. он не дошел до конца, то эти 500 были поделены между тремя остальными участниками</li>
+                    </ul>
+                    <p>По итогу парни залутали <b>2635</b> рублей (<b>1115</b> забрал Химик, <b>890</b> - Саня, <b>615</b> - Максимка и <b>150</b> - Банкомат)</p>
+                    <h1>Видео с конкурса</h1>
+
+                    <div class="video-container" style="gap: 20px;"> 
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/i78wkrUDOcE?si=G9Cfqkl6Kk87v6Zh" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gldQWEKmpMg?si=N0fA7ducnnjD1fuo" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+</body>
+</html>

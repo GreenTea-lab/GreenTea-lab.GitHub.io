@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <title>GreenAssembly</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+
+    <div class="wrap">
+        <div class="header">
+            <span class="title"><a href="index.html">GreenAssembly</a></span>
+
+            <ul class="menu">
+
+                <li class="menu-item-not-list"><a href="../GreenMine/main.html">GreenMine</a></li>
+
+            </ul>
+
+
+        </div>
+    </div>
+
+    <section class="w-page"> 
+        <div id="updown-area">
+            <div id="updown"></div>
+            <div class="container main-box">
+                <div class="content-m"> 
+
+                    <h1>Сборки</h1>
+                   
+                   <p>Сборки по Майнкрафту — это первое, что связало Клан ЧАЙ с игрой, как я думал. Но оказалось, что первым появился Лаки Скайблок (на самом деле удивительно). Однако я точно помню, что до этого всего была сборка с супергеройскими костюмами, но никакой информации о ней я не нашёл.</p> 
+                   <p>Самая первая сборка была создана 26 июля 2022 года. К сожалению, состав модов в этой сборке утерян. Следующая сборка появилась 1 августа 2022 года. В течение 12 дней она менялась, и в итоге появилась новая сборка на версии 1.12.2 (скажем, что это третья сборка). Насколько я помню, там были вампиры, оборотни и паразиты. После этого было затишье до 9 ноября 2022 года, когда появилась сборка "Магия и паразиты" (четвёртая сборка). Сколько в неё играли, я не помню, но точно недолго, думаю, неделю, максимум. Дальше было ещё одно затишье до 24 июня 2023 года. Тогда я обновил сборку "Магия и паразиты" (пятая сборка). Играть в неё тоже удалось лишь неделю-две.</p> 
+                   <p>После этого началась эра покемонов. 1 июля 2023 года появилась первая сборка покемонов (хотя это не точно, так как восстановить полную хронологию практически невозможно).</p> 
+                   <p>К сожалению, никаких сборок не осталось (очень грустно).</p> 
+                   <p>В ближайшее время буду обновлять информацию: хочу перечитать чаты в Дискорде.</p>
+                   
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style_for_first_konkurs.css">
+    <script src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <title>GreenTournament</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+
+    <div class="wrap">
+        <div class="header">
+            <span class="title"><a href="index.html">GreenTournament</a></span>
+            <ul class="menu">
+                <li class="menu-item dropdown">
+                    <a href="#" class="dropdown-toggle">Конкурсы</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="first_konkurs.html">Первый конкурс 2022</a></li>
+                        <li><a href="first_newyear_konkurs.html">Новогодний конкурс 2022</a></li>
+                        <li><a href="first_summer_konkurs.html">Летний конкурс 2024</a></li>
+                        <li><a href="second_newyear_konkurs.html">Новогодний конкурс 2024</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <section class="w-page"> 
+        <div id="updown-area">
+            <div id="updown"></div>
+            <div class="container main-box">
+                <div class="content-m"> 
+                    <div><h1>Первый конкурс</h1></div>
+                    <img src="img/first_konkurs.jpg">
+                    <p>Первый конкурс был сделан примерно за полтора часа, 27 августа 2022 года. Идея создать его пришла случайно. Мы вместе с Димой (Tirubain) накачали пару модов и создали карту. Было создано пять мини-игр: прятки в мобе, снайперы, игры Фуги (к сожалению, суть игры полностью утеряна), паркур и квест в виде пирамиды с лабиринтом и загадками. Участвовали Саня, Хомяк, Банкомат, Амир и Дима (он был соавтором конкурса и вторым админом). Конкурс продлился около двух часов. К сожалению, есть запись только на 1 час 18 минут, все остальное, включая карту конкурса, было утеряно безвозвратно.</p>
+                    <h1>Победители</h1>
+                    <p>В мини-играх победили:</p><p> в двух играх победил хомяк (прятки в мобах и игры фуги),</p> <p>в паркуре и снайперах победил саня (Animeshnik),</p> <p>в финальной игре приз поделили саня и хомяк. По итогу Саня получил 200 рублей, а хомяк 250.</p>
+
+                    <h1>Видео с конкурса</h1>
+
+                    <div class="video-container"> <iframe width="560" height="315" src="https://www.youtube.com/embed/mRUXPAbIud4?si=gkj6bMd2FEb-kWIE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe> </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+</body>
+</html>

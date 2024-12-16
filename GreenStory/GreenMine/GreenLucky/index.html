@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <title>GreenLucky</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+
+    <div class="wrap">
+        <div class="header">
+            <span class="title"><a href="index.html">GreenLucky</a></span>
+
+            <ul class="menu">
+
+                <li class="menu-item-not-list"><a href="../GreenMine/main.html">GreenMine</a></li>
+
+            </ul>
+
+
+        </div>
+    </div>
+
+    <section class="w-page"> 
+        <div id="updown-area">
+            <div id="updown"></div>
+            <div class="container main-box">
+                <div class="content-m"> 
+                   <h1>Лаки Скайблок</h1>
+
+                   <img src="img/lucky.jpg">
+
+                   <p>Идея создать Лаки Скайблок возникла случайно, мне (GreenTea) попался видос какого-то чела на ютубе, который показал, как можно сделать такой же таймер, как был у Диллерона в его видосах. И я подумал, а почему бы не сделать, в итоге, все получилось и очень даже хорошо, сколько было потрачено времени на разработку, не скажу, но окончательная версия, а именно Скайблок 6.1 за 12 июля 2024 года.</p>
+                   <p>Обновления скайблока были примерно раз в один-три месяца, зависело от того, как часто мы играли. В итоговой версии есть возможность сыграть в 27 различных лаки блоков, всего на карте 6 островов (следовательно 6 игроков). Если нужно изменить что-либо, например никнеймы, то нужно менять ники в командных блоках, внутри бедроковых шаров (но лучше использовать эти ники, чтобы не ебаться: Xomak3, Green2Tea, Zex, _-Animeshnik-_, Ilya, Tenshi).</p>
+                   <p>К сожалению, никаких видео и скриншотов нет. Но зато есть воспоминания о некоторых играх, полностью описать не смогу, для каждого она своя (касается только тех, кто играл). Лаки Скайблок был очень интересным опытом в карто строительстве и я считаю, что получилось очень хорошо и интересно. Теперь есть мини-игра, в которую можно заходить несколько раз в год и кайфануть.</p>
+                   
+
+                   <ul class="text">
+                        <li><a href="https://drive.google.com/drive/folders/1gZeM0EUzx08L4kHBoky7DMvXQmRScvkO?usp=drive_link" target="_blank"><i>Файлы Лаки Скайблока</i></a></li>
+                   </ul>
+
+                   <div id="horoscope" style="text-align: center; margin: 20px;">
+                        <button id="horoscopeButton" style="padding: 10px 20px; font-size: 18px; background-color: #4caf50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                            Гороскоп на день
+                        </button>
+                        <div id="horoscopeResult" style="margin-top: 20px; display: none; text-align: center;">
+                            <img id="horoscopeImage" style="max-width: 200px; border-radius: 10px;" src="" alt="Horoscope Image">
+                            <p id="horoscopeText" style="font-size: 18px; color: green;"></p>
+                        </div>
+                    </div>
+
+                       
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+    const horoscopeOptions = [
+    {
+        text: "Emerald лаки блок. День полон изобилия и богатства, удача на вашей стороне.",
+        image: "img/emerald.jpg"
+    },
+    {
+        text: "AmongUS лаки блок. Сегодня вы почувствуете себя частью команды, будьте осторожны с предателями!",
+        image: "img/amongus.jpg"
+    },
+    {
+        text: "Astral лаки блок. Космос благоволит вам, ждите вдохновения и неожиданных открытий.",
+        image: "img/astral.jpg"
+    },
+    {
+        text: "Cookie лаки блок. Угощение дня – радость в мелочах и неожиданные вкусные сюрпризы.",
+        image: "img/cookie.jpg"
+    },
+    {
+        text: "Dark лаки блок. Загадочный день, полный мистических встреч и интересных событий.",
+        image: "img/dark.jpg"
+    },
+    {
+        text: "Random лаки блок. Сегодня все зависит от случая, будьте готовы к сюрпризам.",
+        image: "img/random.jpg"
+    },
+    {
+        text: "Tennis лаки блок. Спорт сделает ваш день ярче, улыбайтесь чаще!",
+        image: "img/tennis.jpg"
+    },
+    {
+        text: "Galaxy лаки блок. Вы почувствуете себя частью чего-то великого и бескрайнего.",
+        image: "img/galaxy.jpg"
+    },
+    {
+        text: "Horror лаки блок. Осторожно, этот день может быть полон неожиданных событий!",
+        image: "img/horror.jpg"
+    },
+    {
+        text: "Judo лаки блок. Вы будете сильны и непоколебимы, как истинный мастер дзюдо.",
+        image: "img/judo.jpg"
+    },
+    {
+        text: "Karen лаки блок. День будет ярким и громким, главное – сохраняйте спокойствие!",
+        image: "img/karen.jpg"
+    },
+    {
+        text: "Hypnosis лаки блок. Сегодня вы обретете удивительное влияние на окружающих.",
+        image: "img/hypnosis.jpg"
+    },
+    {
+        text: "Creeper лаки блок. Взрывоопасный день, полный неожиданных ситуаций!",
+        image: "img/creeper.jpg"
+    },
+    {
+        text: "Enderman лаки блок. Тайны и телепортация – ваш день будет загадочным и интригующим.",
+        image: "img/enderman.jpg"
+    },
+    {
+        text: "Fortuna лаки блок. Сегодня вас будет преследовать удача.",
+        image: "img/fortuna.jpg"
+    },
+    {
+        text: "Programs лаки блок. Технологии и умные решения – ваш ключ к успеху сегодня.",
+        image: "img/programs.jpg"
+    },
+    {
+        text: "Roblox лаки блок. Креатив и творчество станут основой вашего дня.",
+        image: "img/roblox.jpg"
+    },
+    {
+        text: "Spiral лаки блок. Вас закружит водоворот событий, но все завершится благополучно.",
+        image: "img/spiral.jpg"
+    },
+    {
+        text: "Rainbow лаки блок. Да ты счастливчик, сегодня твой день будет очень ярким.",
+        image: "img/rainbow.jpg"
+    },
+    {
+        text: "TNT лаки блок. Будьте готовы к мощным событиям и резким поворотам.",
+        image: "img/tnt.jpg"
+    },
+    {
+        text: "Virus лаки блок. Неожиданные препятствия могут превратиться в новые возможности.",
+        image: "img/virus.jpg"
+    },
+    {
+        text: "MultiVers лаки блок. Миры переплетаются, ждите интересных встреч.",
+        image: "img/multivers.jpg"
+    },
+    {
+        text: "Sakura лаки блок. Красота и гармония наполнят ваш день.",
+        image: "img/sakura.jpg"
+    },
+    {
+        text: "Troll лаки блок. День будет веселым, но не попадитесь на шутки судьбы!",
+        image: "img/troll.jpg"
+    },
+    {
+        text: "Universal лаки блок. Сегодня весь мир у ваших ног, используйте это с умом.",
+        image: "img/universal.jpg"
+    },
+    {
+        text: "DoctorWho лаки блок. Время и пространство на вашей стороне, ждите невероятного.",
+        image: "img/doctorwho.jpg"
+    },
+    {
+        text: "Omega лаки блок. Мощный день, полный великих свершений.",
+        image: "img/omega.jpg"
+    }
+];
+
+    document.getElementById('horoscopeButton').addEventListener('click', function () {
+        const randomIndex = Math.floor(Math.random() * horoscopeOptions.length);
+        const selectedHoroscope = horoscopeOptions[randomIndex];
+
+        const resultDiv = document.getElementById('horoscopeResult');
+        const resultImage = document.getElementById('horoscopeImage');
+        const resultText = document.getElementById('horoscopeText');
+
+        // Устанавливаем содержимое
+        resultImage.src = selectedHoroscope.image;
+        resultText.textContent = selectedHoroscope.text;
+
+        // Показываем блок результата
+        resultDiv.style.display = 'block';
+
+        // Убираем блок через 10 секунд
+        setTimeout(() => {
+            resultDiv.style.display = 'none';
+        }, 6000); // 10000 миллисекунд = 10 секунд
+    });
+    </script>
+
+
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+</body>
+</html>

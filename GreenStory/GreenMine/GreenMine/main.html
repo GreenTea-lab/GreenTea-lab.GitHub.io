@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <title>GreenMine</title>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+
+    <div class="wrap">
+        <div class="header">
+            <span class="title"><a href="main.html">GreenMine</a></span>
+
+            <ul class="menu">
+
+                <li class="menu-item-not-list"><a href="../GreenTournament/index.html">Конкурсы</a></li>
+                <li class="menu-item-not-list"><a href="../GreenLucky/index.html">Лаки Скайблок</a></li>
+                <li class="menu-item-not-list"><a href="../GreenHunt/index.html">Спидраннер против Охотников</a></li>
+                <li class="menu-item-not-list"><a href="../GreenAssembly/index.html">Сборки</a></li>
+
+            </ul>
+
+
+        </div>
+    </div>
+
+    <section class="w-page"> 
+        <div id="updown-area">
+            <div id="updown"></div>
+            <div class="container main-box">
+                <div class="content-m"> 
+                   <h1>Это сайт со всем, что было в Клан Чае в майнкрафте (по-крайне мере, все, что есть)</h1>
+                   <p>В майнкрафт играли особо не часто, но всегда было интересно (хоть и мало человек играло), чего стоят только одни конкурсы и лаки скайблок</p>
+                   <p>Сайт создал с целью сохранения сборок, карт, видео и прочего. В дальнейшем сайт будет размножаться под другие игры. Если у вас есть пожелания по сайту или хотите добавить какую-нибудь информацию, то пишите GreenTea (Данил) в одну из этих сетей:</p>
+                   <ul class="text">
+                       <li><a href="https://t.me/Green_2_Tea" target="_blank"><i>Telegram</i></a></li>
+                       <li><a href="https://vk.com/green1_tea" target="_blank"><i>VK</i></a></li>
+                       <li><i>Discord: green2tea</i></li>
+                   </ul>
+                   <p>P.S. если вы совсем ебнутый, можете написать на почту: danil-5858258@mail.ru</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+</body>
+</html>
