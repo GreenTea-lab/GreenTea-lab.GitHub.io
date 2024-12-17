@@ -587,35 +587,48 @@ iframe {
         margin: 3px 0;
     }
 
+    .dropdown-menu {
+        position: relative;
+        background: none;
+        box-shadow: none;
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+/* Закругленные края для блоков */
+    .main-box, .content-m, .w-page {
+        border-radius: 10px; /* Добавляем закругления */
+        padding: 15px; /* Отступы внутри блока */
+    }
+
+    /* Контент снизу – пространство */
+    .content-m {
+        margin-bottom: 20px; /* Добавляем пространство снизу */
+    }
+
+
     /* Основной контент */
     .container, .main-box, .content-m {
         width: 100%;
-        padding: 15px;
+        padding: 10px;
         margin: 0 5px;
         box-shadow: none;
-        border-radius: 10px; /* Закругленные края */
     }
 
     .w-page {
         padding-top: 20px;
-        margin-bottom: 20px; /* Пространство снизу */
     }
 
-    .content-m {
-        margin-bottom: 20px; /* Дополнительное пространство под блоком */
-    }
-
-    /* Картинки и видео */
+    /* Обновленные изображения и видео */
     img, iframe {
         width: 100%;
         height: auto;
         border-radius: 10px; /* Закругление краев */
     }
 
+    /* Видео и контент контейнер */
     .video-container {
-        flex-direction: column;
-        gap: 10px;
-        margin: 10px 0;
+        margin-bottom: 15px;
     }
 
     /* Колесо удачи */
@@ -633,6 +646,17 @@ iframe {
         flex-direction: column;
         gap: 10px;
     }
+	/* Общий контент */
+    h1, h2, h3 {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 10px;
+    }
 
     /* Прелоадер */
     .preloader__image {
@@ -641,10 +665,15 @@ iframe {
         margin: 0 auto;
     }
 
-    /* Отступы и пространство */
+    /* Дополнительные отступы */
     .wrap {
         padding: 10px 5px;
     }
+
+    .title {
+        font-size: 18px;
+    }
+}
 
     .title {
         font-size: 18px;
