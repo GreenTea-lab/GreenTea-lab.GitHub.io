@@ -539,7 +539,6 @@ iframe {
     /* Можно добавить дополнительные стили, если необходимо */
 }
 
-
 /* Адаптация для мобильных устройств */
 @media screen and (max-width: 768px) {
     /* Общие стили */
@@ -567,54 +566,50 @@ iframe {
     /* Шапка */
     .header {
         flex-direction: column;
+        align-items: center;
+        padding: 5px 10px;
         height: auto;
-        padding: 5px;
         text-align: center;
     }
 
     .title {
-        font-size: 18px;
-        text-align: center;
-        margin: 5px 0;
+        font-size: 22px; /* Увеличенный размер для GreenMine */
+        font-weight: bold;
+        margin: 0;
+        padding: 5px 0;
     }
 
     .menu {
-        flex-direction: column;
-        align-items: center;
-        padding: 0;
+        margin-top: 5px; /* Уменьшенное расстояние до пунктов меню */
     }
 
     .menu-item {
-        margin: 5px 0;
-        text-align: center;
-    }
-
-    .dropdown-menu {
-        position: relative;
-        background: none;
-        box-shadow: none;
-        display: block;
-        opacity: 1;
-        visibility: visible;
+        margin: 3px 0;
     }
 
     /* Основной контент */
     .container, .main-box, .content-m {
         width: 100%;
-        padding: 10px;
+        padding: 15px;
         margin: 0 5px;
         box-shadow: none;
+        border-radius: 10px; /* Закругленные края */
     }
 
     .w-page {
         padding-top: 20px;
+        margin-bottom: 20px; /* Пространство снизу */
+    }
+
+    .content-m {
+        margin-bottom: 20px; /* Дополнительное пространство под блоком */
     }
 
     /* Картинки и видео */
     img, iframe {
         width: 100%;
         height: auto;
-        border-radius: 5px;
+        border-radius: 10px; /* Закругление краев */
     }
 
     .video-container {
@@ -646,7 +641,7 @@ iframe {
         margin: 0 auto;
     }
 
-    /* Дополнительные отступы */
+    /* Отступы и пространство */
     .wrap {
         padding: 10px 5px;
     }
