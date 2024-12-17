@@ -627,22 +627,6 @@ iframe {
         margin: 10px 0;
     }
 
-    /* Колесо удачи */
-    .wheel-container {
-        width: 90%;
-        padding: 15px;
-    }
-
-    canvas#wheelCanvas {
-        width: 100%;
-        height: auto;
-    }
-
-    .controls, .add-segment {
-        flex-direction: column;
-        gap: 10px;
-    }
-
     /* Прелоадер */
     .preloader__image {
         width: 150px;
