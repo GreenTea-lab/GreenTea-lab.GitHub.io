@@ -543,7 +543,7 @@ iframe {
 @media screen and (max-width: 768px) {
     /* Общие стили */
     body {
-        font-size: 22px;
+        font-size: 14px;
         margin: 0;
         background-size: cover;
         background-position: center;
