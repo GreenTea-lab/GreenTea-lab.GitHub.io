@@ -538,3 +538,84 @@ iframe {
 .wheel-container.hide-variants .result-display {
     /* Можно добавить дополнительные стили, если необходимо */
 }
+
+
+/* Медиа-запрос для мобильных устройств */
+@media screen and (max-width: 768px) {
+    /* Общее */
+    body {
+        font-size: 14px;
+        background-size: cover;
+    }
+
+    /* Заголовки */
+    h1, h2, h3 {
+        font-size: 1.5em;
+    }
+
+    p {
+        font-size: 16px;
+    }
+
+    /* Изображения */
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Шапка */
+    .header {
+        flex-direction: column;
+        align-items: center;
+        height: auto;
+        padding: 10px 0;
+    }
+
+    .title {
+        font-size: 18pt;
+        margin: 10px 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .menu-item {
+        margin: 5px 0;
+    }
+
+    /* Контент */
+    .main-box, .container, .content-m {
+        width: 100%;
+        padding: 10px;
+        box-shadow: none;
+    }
+
+    .wheel-container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    canvas#wheelCanvas {
+        width: 100%;
+        height: auto;
+    }
+
+    iframe {
+        width: 100%;
+        height: auto;
+    }
+
+    /* Видео */
+    .video-container {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    /* Дополнительно */
+    .controls, .add-segment {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
