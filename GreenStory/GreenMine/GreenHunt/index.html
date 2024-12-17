@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <title>GreenHunt</title>
+    <link rel="icon" href="img/sword.png" type="image/x-icon">
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+
+    <div class="wrap">
+        <div class="header">
+            <a href="../GreenMine/main.html"><img src="img/logotype.png" alt="Minecraft Icon" class="title"></a>
+
+            <ul class="menu">
+
+                <li class="menu-item-not-list"><a href="index.html">GreenHunt</a></li>
+
+            </ul>
+
+
+        </div>
+    </div>
+
+    <section class="w-page"> 
+        <div id="updown-area">
+            <div id="updown"></div>
+            <div class="container main-box">
+                <div class="content-m"> 
+
+                    <h1>Спидраннер против охотников</h1>
+                   <img src="img/hunter.jpg" class="hunt-img">
+                   <p>Режим спидраннера был очень популярен на ютубе и, в целом, в сообществе minecraft. Поэтому я решил сделать его. Создал режим в начале сентября 2024 года. Но, из-за малого желания у народа играть в майнкрафт, сыграли всего несколько раз. В одной из игр я (GreenTea) почти смог дойти до края, но меня убили. Санечка, в свою очередь, смог дойти до убийства дракона, но, к сожалению, дракон оказался сильнее. Эта игра была последней.</p>
+                   <p>Также для этого режима я сделал скрипты на команду checkInventory и режим убийства с одного удара, но у тебя только половина хп. Сборка и скрипты сохранились, но нет никаких видео и скриншотов. Для игры достаточно установить готовый файл со сборкой и в настройках сервера поставить последнюю джаву. После прописать команду /SpdRunVsHunt.</p>
+                   
+
+                   <ul class="text">
+                        <li><a href="https://drive.google.com/drive/folders/1X5iz4RR16sRxGr93N9ybhfw7NmKyHOeL?usp=sharing" target="_blank"><i>Файлы Спидраннера против охотников</i></a></li>
+                   </ul>
+                   <div id="horoscope" style="text-align: center; margin: 20px;">
+                        <button id="horoscopeButton" style="padding: 10px 20px; font-size: 18px; background-color: #4caf50; color: white; border: none; border-radius: 5px; cursor: pointer;">
+                            Определи кто ты, спидраннер или охотник?
+                        </button>
+                        <div id="horoscopeResult" style="margin-top: 20px; display: none; text-align: center;">
+                            <img id="horoscopeImage" style="max-width: 200px; border-radius: 10px;" src="" alt="Horoscope Image">
+                            <p id="horoscopeText" style="font-size: 18px; color: green;"></p>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </section>
+
+    
+     <script>
+        const horoscopeOptions = [
+            {
+                text: "Ты спидраннер! Беги!",
+                image: "img/runner.jpg"
+            },
+            {
+                text: "Ты охотник! Бегом за спидраннером!",
+                image: "img/hunter_hunter.jpg"
+            },
+        ];
+
+        document.getElementById('horoscopeButton').addEventListener('click', function () {
+            const randomIndex = Math.floor(Math.random() * horoscopeOptions.length);
+            const selectedHoroscope = horoscopeOptions[randomIndex];
+
+            const resultDiv = document.getElementById('horoscopeResult');
+            const resultImage = document.getElementById('horoscopeImage');
+            const resultText = document.getElementById('horoscopeText');
+
+            // Устанавливаем содержимое
+            resultImage.src = selectedHoroscope.image;
+            resultText.textContent = selectedHoroscope.text;
+
+            // Показываем блок результата
+            resultDiv.style.display = 'block';
+
+            // Убираем блок через 10 секунд
+            setTimeout(() => {
+                resultDiv.style.display = 'none';
+            }, 6000); // 10000 миллисекунд = 10 секунд
+        });
+    </script>
+
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+</body>
+</html>

@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" type="text/css" href="style_for_main.css">
+    <script src="https://code.jquery.com/jquery-1.4.2.min.js"></script>
+    <link rel="icon" href="img/logo.png" type="image/x-icon">
+    <title>GreenTournament</title>
+</head>
+
+<body>
+    <div class="preloader">
+        <div class="preloader__image"></div>
+    </div>
+
+    <div class="wrap">
+        <div class="header">
+            <a href="../GreenMine/main.html"><img src="img/logotype.png" alt="Minecraft Icon" class="title"></a>
+
+            <ul class="menu">
+
+                <li class="menu-item dropdown">
+                    <a href="#" class="dropdown-toggle">Конкурсы</a>
+                    <ul class="dropdown-menu">
+                        <li><a href="first_konkurs.html">Первый конкурс 2022</a></li>
+                        <li><a href="first_newyear_konkurs.html">Новогодний конкурс 2022</a></li>
+                        <li><a href="first_summer_konkurs.html">Летний конкурс 2024</a></li>
+                        <li><a href="second_newyear_konkurs.html">Новогодний конкурс 2024</a></li>
+                    </ul>
+                </li>
+                <!-- <button id="themeButton" onclick="toggleTheme()">Сменить фон</button> -->
+
+                <li class="menu-item-not-list"><a href="index.html">GreenTournament</a></li>
+            </ul>
+
+
+        </div>
+    </div>
+
+    <section class="w-page"> 
+        <div id="updown-area">
+            <div id="updown"></div>
+            <div class="container main-box">
+                <div class="content-m"> 
+                    <h1>Колесо Денежной удачи</h1>
+                    <!-- Начало блока Колеса удачи -->
+                    <div class="wheel-container">
+                        <!-- Стрелка, указывающая на выигрышный сегмент -->
+                        <div class="arrow"></div>
+
+                        <canvas id="wheelCanvas" width="600" height="600"></canvas>
+
+                        <div class="result-display" id="resultDisplay"></div>
+
+                        <div class="controls">
+                            <div class="checkbox-container">
+                                <input type="checkbox" id="hideCheckbox" onclick="toggleHideVariants()" class="styled-checkbox">
+                                <label for="hideCheckbox" class="styled-label">Скрыть варианты</label>
+                            </div>
+                            <!-- Поле ввода для секунд вращения -->
+                            <div class="duration-container">
+                                <input type="number" id="durationInput" min="1" max="60" value="5" class="duration-input">
+                            </div>
+                            <button onclick="spinWheel()">Крутить колесо</button>
+                        </div>
+                        <div class="add-segment">
+                            <input type="text" id="newSegment" placeholder="Новый вариант">
+                            <button onclick="addSegment()">Добавить</button>
+                        </div>
+                        <div class="segment-list">
+                            <h3>Текущие варианты:</h3>
+                            <ul id="segmentsList"></ul>
+                        </div>
+                    </div>
+                    <!-- Конец блока Колеса удачи -->
+                </div>
+            </div>
+        </div>
+    </section>
+   
+    <script src="scripts/wheel.js"></script>
+    <script src="scripts/main.js"></script>
+
+    <script>
+        window.onload = function () {
+            document.body.classList.add('loaded_hiding');
+            window.setTimeout(function () {
+                document.body.classList.add('loaded');
+                document.body.classList.remove('loaded_hiding');
+            }, 500);
+        }
+    </script>
+</body>
+</html>
