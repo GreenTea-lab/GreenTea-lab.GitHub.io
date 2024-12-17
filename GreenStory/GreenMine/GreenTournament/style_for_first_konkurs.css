@@ -337,4 +337,103 @@ iframe {
 .loaded .preloader {
   display: none;
 }
+/* Адаптация для мобильных устройств */
+@media screen and (max-width: 768px) {
+    /* Общие стили */
+    body {
+        font-size: 14px;
+        margin: 0;
+        background-size: cover;
+        background-position: center;
+        background-attachment: scroll;
+        overflow-x: hidden;
+    }
+
+    h1, h2, h3 {
+        font-size: 1.2em;
+        margin: 10px 0;
+    }
+
+    p {
+        font-size: 14px;
+        line-height: 1.4;
+        margin: 10px;
+        text-align: justify;
+    }
+
+    /* Шапка */
+    .header {
+        flex-direction: column;
+        height: auto;
+        padding: 5px;
+        text-align: center;
+    }
+
+    .title {
+        font-size: 18px;
+        text-align: center;
+        margin: 5px 0;
+    }
+
+    .menu {
+        flex-direction: column;
+        align-items: center;
+        padding: 0;
+    }
+
+    .menu-item {
+        margin: 5px 0;
+        text-align: center;
+    }
+
+    .dropdown-menu {
+        position: relative;
+        background: none;
+        box-shadow: none;
+        display: block;
+        opacity: 1;
+        visibility: visible;
+    }
+
+    /* Основной контент */
+    .container, .main-box, .content-m {
+        width: 100%;
+        padding: 10px;
+        margin: 0 5px;
+        box-shadow: none;
+    }
+
+    .w-page {
+        padding-top: 20px;
+    }
+
+    /* Картинки и видео */
+    img, iframe {
+        width: 100%;
+        height: auto;
+        border-radius: 5px;
+    }
+
+    .video-container {
+        flex-direction: column;
+        gap: 10px;
+        margin: 10px 0;
+    }
+
+    /* Прелоадер */
+    .preloader__image {
+        width: 150px;
+        height: 150px;
+        margin: 0 auto;
+    }
+
+    /* Дополнительные отступы */
+    .wrap {
+        padding: 10px 5px;
+    }
+
+    .title {
+        font-size: 18px;
+    }
+}
 
